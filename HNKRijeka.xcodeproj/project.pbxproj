@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73C5F9EB97334428A9A5EDA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED38335898C4E8DB48B1063 /* libPods.a */; };
+		D452B51B180961650052FFFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D452B51A180961650052FFFF /* Foundation.framework */; };
+		D452B51D180961650052FFFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D452B51C180961650052FFFF /* CoreGraphics.framework */; };
+		D452B51F180961650052FFFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D452B51E180961650052FFFF /* UIKit.framework */; };
+		D452B527180961650052FFFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B526180961650052FFFF /* main.m */; };
+		D452B52B180961650052FFFF /* MIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B52A180961650052FFFF /* MIAppDelegate.m */; };
+		D452B52D180961650052FFFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D452B52C180961650052FFFF /* Images.xcassets */; };
+		D452B54E180964820052FFFF /* MINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B54D180964820052FFFF /* MINavigationController.m */; };
+		D452B551180964B70052FFFF /* MIMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B550180964B70052FFFF /* MIMenuViewController.m */; };
+		D452B554180965040052FFFF /* MIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B553180965040052FFFF /* MIHomeViewController.m */; };
+		D452B5561809687F0052FFFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D452B5551809687F0052FFFF /* QuartzCore.framework */; };
+		D452B55C18099FDF0052FFFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D452B55A18099FDF0052FFFF /* InfoPlist.strings */; };
+		D452B55F1809BA640052FFFF /* CurrentCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D452B55E1809BA640052FFFF /* CurrentCalendarCell.xib */; };
+		D452B5621809BFCA0052FFFF /* MICurrentCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B5611809BFCA0052FFFF /* MICurrentCalendarCell.m */; };
+		D452B5BE1809CE270052FFFF /* ajayi.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B59F1809CE270052FFFF /* ajayi.png */; };
+		D452B5BF1809CE270052FFFF /* alispahic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A01809CE270052FFFF /* alispahic.png */; };
+		D452B5C01809CE270052FFFF /* bagadur.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A11809CE270052FFFF /* bagadur.png */; };
+		D452B5C11809CE270052FFFF /* benko.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A21809CE270052FFFF /* benko.png */; };
+		D452B5C21809CE270052FFFF /* bertosa.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A31809CE270052FFFF /* bertosa.png */; };
+		D452B5C31809CE270052FFFF /* boras.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A41809CE270052FFFF /* boras.png */; };
+		D452B5C41809CE270052FFFF /* brezovec.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A51809CE270052FFFF /* brezovec.png */; };
+		D452B5C51809CE270052FFFF /* cesarec.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A61809CE270052FFFF /* cesarec.png */; };
+		D452B5C61809CE270052FFFF /* datkovic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A71809CE270052FFFF /* datkovic.png */; };
+		D452B5C71809CE270052FFFF /* jugovic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A81809CE270052FFFF /* jugovic.png */; };
+		D452B5C81809CE270052FFFF /* knezevic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5A91809CE270052FFFF /* knezevic.png */; };
+		D452B5C91809CE270052FFFF /* kramaric.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5AA1809CE270052FFFF /* kramaric.png */; };
+		D452B5CA1809CE270052FFFF /* krstanovic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5AB1809CE270052FFFF /* krstanovic.png */; };
+		D452B5CB1809CE270052FFFF /* kvrzic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5AC1809CE270052FFFF /* kvrzic.png */; };
+		D452B5CC1809CE270052FFFF /* leskovic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5AD1809CE270052FFFF /* leskovic.png */; };
+		D452B5CD1809CE270052FFFF /* males.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5AE1809CE270052FFFF /* males.png */; };
+		D452B5CE1809CE270052FFFF /* mance.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5AF1809CE270052FFFF /* mance.png */; };
+		D452B5CF1809CE270052FFFF /* marcijus.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B01809CE270052FFFF /* marcijus.png */; };
+		D452B5D01809CE270052FFFF /* maric.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B11809CE270052FFFF /* maric.png */; };
+		D452B5D11809CE270052FFFF /* mitrovic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B21809CE270052FFFF /* mitrovic.png */; };
+		D452B5D21809CE270052FFFF /* mocinic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B31809CE270052FFFF /* mocinic.png */; };
+		D452B5D31809CE270052FFFF /* mujanovic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B41809CE270052FFFF /* mujanovic.png */; };
+		D452B5D41809CE270052FFFF /* okechukwu.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B51809CE270052FFFF /* okechukwu.png */; };
+		D452B5D51809CE270052FFFF /* pokrivac.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B61809CE270052FFFF /* pokrivac.png */; };
+		D452B5D61809CE270052FFFF /* pusic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B71809CE270052FFFF /* pusic.png */; };
+		D452B5D71809CE270052FFFF /* raspor.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B81809CE270052FFFF /* raspor.png */; };
+		D452B5D81809CE270052FFFF /* sharbini.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B91809CE270052FFFF /* sharbini.png */; };
+		D452B5D91809CE270052FFFF /* skaraboat.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BA1809CE270052FFFF /* skaraboat.png */; };
+		D452B5DA1809CE270052FFFF /* tomecak.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BB1809CE270052FFFF /* tomecak.png */; };
+		D452B5DB1809CE270052FFFF /* vargic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BC1809CE270052FFFF /* vargic.png */; };
+		D452B5DC1809CE270052FFFF /* zlomislic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BD1809CE270052FFFF /* zlomislic.png */; };
+		D452B5DF1809D4760052FFFF /* MICalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B5DE1809D4760052FFFF /* MICalendarItem.m */; };
+		D452B5FC180AAF2D0052FFFF /* betis.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5F9180AAF2D0052FFFF /* betis.png */; };
+		D452B5FD180AAF2D0052FFFF /* lyon.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5FA180AAF2D0052FFFF /* lyon.png */; };
+		D452B5FE180AAF2D0052FFFF /* vitoria.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5FB180AAF2D0052FFFF /* vitoria.png */; };
+		D452B649180ABB3B0052FFFF /* dinamo.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B63F180ABB3B0052FFFF /* dinamo.png */; };
+		D452B64A180ABB3B0052FFFF /* hajduk.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B640180ABB3B0052FFFF /* hajduk.png */; };
+		D452B64B180ABB3B0052FFFF /* hrvatski_dragovoljac.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B641180ABB3B0052FFFF /* hrvatski_dragovoljac.png */; };
+		D452B64C180ABB3B0052FFFF /* istra_1961.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B642180ABB3B0052FFFF /* istra_1961.png */; };
+		D452B64D180ABB3B0052FFFF /* lokomotiva.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B643180ABB3B0052FFFF /* lokomotiva.png */; };
+		D452B64E180ABB3B0052FFFF /* osijek.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B644180ABB3B0052FFFF /* osijek.png */; };
+		D452B64F180ABB3B0052FFFF /* rijeka.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B645180ABB3B0052FFFF /* rijeka.png */; };
+		D452B650180ABB3B0052FFFF /* slaven_belupo.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B646180ABB3B0052FFFF /* slaven_belupo.png */; };
+		D452B651180ABB3B0052FFFF /* split.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B647180ABB3B0052FFFF /* split.png */; };
+		D452B652180ABB3B0052FFFF /* zadar.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B648180ABB3B0052FFFF /* zadar.png */; };
+		D452B656180AD4C20052FFFF /* MICalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B655180AD4C20052FFFF /* MICalendarCell.m */; };
+		D452B658180AD4DB0052FFFF /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D452B657180AD4DB0052FFFF /* CalendarCell.xib */; };
+		D452B65B180AE5A90052FFFF /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B659180AE5A90052FFFF /* iTunesArtwork.png */; };
+		D452B65C180AE5A90052FFFF /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B65A180AE5A90052FFFF /* iTunesArtwork@2x.png */; };
+		D452B660180AE8870052FFFF /* MIUnderlayNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B65F180AE8870052FFFF /* MIUnderlayNavigationBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4ED38335898C4E8DB48B1063 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D75C36EC3E490CBA7116AC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D452B517180961650052FFFF /* HNKRijeka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNKRijeka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D452B51A180961650052FFFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D452B51C180961650052FFFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D452B51E180961650052FFFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D452B522180961650052FFFF /* HNKRijeka-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HNKRijeka-Info.plist"; sourceTree = "<group>"; };
+		D452B526180961650052FFFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D452B528180961650052FFFF /* HNKRijeka-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HNKRijeka-Prefix.pch"; sourceTree = "<group>"; };
+		D452B529180961650052FFFF /* MIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIAppDelegate.h; sourceTree = "<group>"; };
+		D452B52A180961650052FFFF /* MIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MIAppDelegate.m; sourceTree = "<group>"; };
+		D452B52C180961650052FFFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D452B533180961650052FFFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D452B54C180964820052FFFF /* MINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MINavigationController.h; sourceTree = "<group>"; };
+		D452B54D180964820052FFFF /* MINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MINavigationController.m; sourceTree = "<group>"; };
+		D452B54F180964B70052FFFF /* MIMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIMenuViewController.h; sourceTree = "<group>"; };
+		D452B550180964B70052FFFF /* MIMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIMenuViewController.m; sourceTree = "<group>"; };
+		D452B552180965040052FFFF /* MIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIHomeViewController.h; sourceTree = "<group>"; };
+		D452B553180965040052FFFF /* MIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIHomeViewController.m; sourceTree = "<group>"; };
+		D452B5551809687F0052FFFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D452B55B18099FDF0052FFFF /* base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = base; path = base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D452B55E1809BA640052FFFF /* CurrentCalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentCalendarCell.xib; sourceTree = "<group>"; };
+		D452B5601809BFCA0052FFFF /* MICurrentCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICurrentCalendarCell.h; sourceTree = "<group>"; };
+		D452B5611809BFCA0052FFFF /* MICurrentCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICurrentCalendarCell.m; sourceTree = "<group>"; };
+		D452B59F1809CE270052FFFF /* ajayi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ajayi.png; sourceTree = "<group>"; };
+		D452B5A01809CE270052FFFF /* alispahic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alispahic.png; sourceTree = "<group>"; };
+		D452B5A11809CE270052FFFF /* bagadur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bagadur.png; sourceTree = "<group>"; };
+		D452B5A21809CE270052FFFF /* benko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = benko.png; sourceTree = "<group>"; };
+		D452B5A31809CE270052FFFF /* bertosa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bertosa.png; sourceTree = "<group>"; };
+		D452B5A41809CE270052FFFF /* boras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boras.png; sourceTree = "<group>"; };
+		D452B5A51809CE270052FFFF /* brezovec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brezovec.png; sourceTree = "<group>"; };
+		D452B5A61809CE270052FFFF /* cesarec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cesarec.png; sourceTree = "<group>"; };
+		D452B5A71809CE270052FFFF /* datkovic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = datkovic.png; sourceTree = "<group>"; };
+		D452B5A81809CE270052FFFF /* jugovic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jugovic.png; sourceTree = "<group>"; };
+		D452B5A91809CE270052FFFF /* knezevic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knezevic.png; sourceTree = "<group>"; };
+		D452B5AA1809CE270052FFFF /* kramaric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kramaric.png; sourceTree = "<group>"; };
+		D452B5AB1809CE270052FFFF /* krstanovic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krstanovic.png; sourceTree = "<group>"; };
+		D452B5AC1809CE270052FFFF /* kvrzic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kvrzic.png; sourceTree = "<group>"; };
+		D452B5AD1809CE270052FFFF /* leskovic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leskovic.png; sourceTree = "<group>"; };
+		D452B5AE1809CE270052FFFF /* males.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = males.png; sourceTree = "<group>"; };
+		D452B5AF1809CE270052FFFF /* mance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mance.png; sourceTree = "<group>"; };
+		D452B5B01809CE270052FFFF /* marcijus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marcijus.png; sourceTree = "<group>"; };
+		D452B5B11809CE270052FFFF /* maric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maric.png; sourceTree = "<group>"; };
+		D452B5B21809CE270052FFFF /* mitrovic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mitrovic.png; sourceTree = "<group>"; };
+		D452B5B31809CE270052FFFF /* mocinic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mocinic.png; sourceTree = "<group>"; };
+		D452B5B41809CE270052FFFF /* mujanovic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mujanovic.png; sourceTree = "<group>"; };
+		D452B5B51809CE270052FFFF /* okechukwu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = okechukwu.png; sourceTree = "<group>"; };
+		D452B5B61809CE270052FFFF /* pokrivac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokrivac.png; sourceTree = "<group>"; };
+		D452B5B71809CE270052FFFF /* pusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pusic.png; sourceTree = "<group>"; };
+		D452B5B81809CE270052FFFF /* raspor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raspor.png; sourceTree = "<group>"; };
+		D452B5B91809CE270052FFFF /* sharbini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharbini.png; sourceTree = "<group>"; };
+		D452B5BA1809CE270052FFFF /* skaraboat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skaraboat.png; sourceTree = "<group>"; };
+		D452B5BB1809CE270052FFFF /* tomecak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomecak.png; sourceTree = "<group>"; };
+		D452B5BC1809CE270052FFFF /* vargic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vargic.png; sourceTree = "<group>"; };
+		D452B5BD1809CE270052FFFF /* zlomislic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zlomislic.png; sourceTree = "<group>"; };
+		D452B5DD1809D4760052FFFF /* MICalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICalendarItem.h; sourceTree = "<group>"; };
+		D452B5DE1809D4760052FFFF /* MICalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICalendarItem.m; sourceTree = "<group>"; };
+		D452B5F9180AAF2D0052FFFF /* betis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = betis.png; sourceTree = "<group>"; };
+		D452B5FA180AAF2D0052FFFF /* lyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lyon.png; sourceTree = "<group>"; };
+		D452B5FB180AAF2D0052FFFF /* vitoria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vitoria.png; sourceTree = "<group>"; };
+		D452B63F180ABB3B0052FFFF /* dinamo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dinamo.png; sourceTree = "<group>"; };
+		D452B640180ABB3B0052FFFF /* hajduk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hajduk.png; sourceTree = "<group>"; };
+		D452B641180ABB3B0052FFFF /* hrvatski_dragovoljac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hrvatski_dragovoljac.png; sourceTree = "<group>"; };
+		D452B642180ABB3B0052FFFF /* istra_1961.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = istra_1961.png; sourceTree = "<group>"; };
+		D452B643180ABB3B0052FFFF /* lokomotiva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lokomotiva.png; sourceTree = "<group>"; };
+		D452B644180ABB3B0052FFFF /* osijek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osijek.png; sourceTree = "<group>"; };
+		D452B645180ABB3B0052FFFF /* rijeka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rijeka.png; sourceTree = "<group>"; };
+		D452B646180ABB3B0052FFFF /* slaven_belupo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slaven_belupo.png; sourceTree = "<group>"; };
+		D452B647180ABB3B0052FFFF /* split.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split.png; sourceTree = "<group>"; };
+		D452B648180ABB3B0052FFFF /* zadar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zadar.png; sourceTree = "<group>"; };
+		D452B654180AD4C20052FFFF /* MICalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICalendarCell.h; sourceTree = "<group>"; };
+		D452B655180AD4C20052FFFF /* MICalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICalendarCell.m; sourceTree = "<group>"; };
+		D452B657180AD4DB0052FFFF /* CalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		D452B659180AE5A90052FFFF /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = HNKRijeka/iTunesArtwork.png; sourceTree = "<group>"; };
+		D452B65A180AE5A90052FFFF /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "HNKRijeka/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		D452B65E180AE8870052FFFF /* MIUnderlayNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIUnderlayNavigationBar.h; sourceTree = "<group>"; };
+		D452B65F180AE8870052FFFF /* MIUnderlayNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIUnderlayNavigationBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D452B514180961650052FFFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D452B5561809687F0052FFFF /* QuartzCore.framework in Frameworks */,
+				D452B51D180961650052FFFF /* CoreGraphics.framework in Frameworks */,
+				D452B51F180961650052FFFF /* UIKit.framework in Frameworks */,
+				D452B51B180961650052FFFF /* Foundation.framework in Frameworks */,
+				73C5F9EB97334428A9A5EDA8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D452B50E180961650052FFFF = {
+			isa = PBXGroup;
+			children = (
+				D452B520180961650052FFFF /* HNKRijeka */,
+				D452B519180961650052FFFF /* Frameworks */,
+				D452B518180961650052FFFF /* Products */,
+				D452B659180AE5A90052FFFF /* iTunesArtwork.png */,
+				D452B65A180AE5A90052FFFF /* iTunesArtwork@2x.png */,
+				54D75C36EC3E490CBA7116AC /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		D452B518180961650052FFFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D452B517180961650052FFFF /* HNKRijeka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D452B519180961650052FFFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D452B5551809687F0052FFFF /* QuartzCore.framework */,
+				D452B51A180961650052FFFF /* Foundation.framework */,
+				D452B51C180961650052FFFF /* CoreGraphics.framework */,
+				D452B51E180961650052FFFF /* UIKit.framework */,
+				D452B533180961650052FFFF /* XCTest.framework */,
+				4ED38335898C4E8DB48B1063 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D452B520180961650052FFFF /* HNKRijeka */ = {
+			isa = PBXGroup;
+			children = (
+				D452B55718096F290052FFFF /* Classes */,
+				D452B529180961650052FFFF /* MIAppDelegate.h */,
+				D452B52A180961650052FFFF /* MIAppDelegate.m */,
+				D452B52C180961650052FFFF /* Images.xcassets */,
+				D452B521180961650052FFFF /* Supporting Files */,
+			);
+			path = HNKRijeka;
+			sourceTree = "<group>";
+		};
+		D452B521180961650052FFFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D452B5631809C6C70052FFFF /* Images */,
+				D452B55A18099FDF0052FFFF /* InfoPlist.strings */,
+				D452B522180961650052FFFF /* HNKRijeka-Info.plist */,
+				D452B526180961650052FFFF /* main.m */,
+				D452B528180961650052FFFF /* HNKRijeka-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D452B54B1809644B0052FFFF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D452B54C180964820052FFFF /* MINavigationController.h */,
+				D452B54D180964820052FFFF /* MINavigationController.m */,
+				D452B54F180964B70052FFFF /* MIMenuViewController.h */,
+				D452B550180964B70052FFFF /* MIMenuViewController.m */,
+				D452B552180965040052FFFF /* MIHomeViewController.h */,
+				D452B553180965040052FFFF /* MIHomeViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D452B55718096F290052FFFF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D452B65D180AE8630052FFFF /* Utils */,
+				D452B5E01809D4810052FFFF /* Models */,
+				D452B55D1809BA3D0052FFFF /* Views */,
+				D452B54B1809644B0052FFFF /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D452B55D1809BA3D0052FFFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D452B653180AD4860052FFFF /* Table Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D452B5631809C6C70052FFFF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D452B63E180ABB3B0052FFFF /* hnl */,
+				D452B5F8180AAF2D0052FFFF /* uefa */,
+				D452B59E1809CE270052FFFF /* players */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D452B59E1809CE270052FFFF /* players */ = {
+			isa = PBXGroup;
+			children = (
+				D452B59F1809CE270052FFFF /* ajayi.png */,
+				D452B5A01809CE270052FFFF /* alispahic.png */,
+				D452B5A11809CE270052FFFF /* bagadur.png */,
+				D452B5A21809CE270052FFFF /* benko.png */,
+				D452B5A31809CE270052FFFF /* bertosa.png */,
+				D452B5A41809CE270052FFFF /* boras.png */,
+				D452B5A51809CE270052FFFF /* brezovec.png */,
+				D452B5A61809CE270052FFFF /* cesarec.png */,
+				D452B5A71809CE270052FFFF /* datkovic.png */,
+				D452B5A81809CE270052FFFF /* jugovic.png */,
+				D452B5A91809CE270052FFFF /* knezevic.png */,
+				D452B5AA1809CE270052FFFF /* kramaric.png */,
+				D452B5AB1809CE270052FFFF /* krstanovic.png */,
+				D452B5AC1809CE270052FFFF /* kvrzic.png */,
+				D452B5AD1809CE270052FFFF /* leskovic.png */,
+				D452B5AE1809CE270052FFFF /* males.png */,
+				D452B5AF1809CE270052FFFF /* mance.png */,
+				D452B5B01809CE270052FFFF /* marcijus.png */,
+				D452B5B11809CE270052FFFF /* maric.png */,
+				D452B5B21809CE270052FFFF /* mitrovic.png */,
+				D452B5B31809CE270052FFFF /* mocinic.png */,
+				D452B5B41809CE270052FFFF /* mujanovic.png */,
+				D452B5B51809CE270052FFFF /* okechukwu.png */,
+				D452B5B61809CE270052FFFF /* pokrivac.png */,
+				D452B5B71809CE270052FFFF /* pusic.png */,
+				D452B5B81809CE270052FFFF /* raspor.png */,
+				D452B5B91809CE270052FFFF /* sharbini.png */,
+				D452B5BA1809CE270052FFFF /* skaraboat.png */,
+				D452B5BB1809CE270052FFFF /* tomecak.png */,
+				D452B5BC1809CE270052FFFF /* vargic.png */,
+				D452B5BD1809CE270052FFFF /* zlomislic.png */,
+			);
+			path = players;
+			sourceTree = "<group>";
+		};
+		D452B5E01809D4810052FFFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D452B5DD1809D4760052FFFF /* MICalendarItem.h */,
+				D452B5DE1809D4760052FFFF /* MICalendarItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D452B5F8180AAF2D0052FFFF /* uefa */ = {
+			isa = PBXGroup;
+			children = (
+				D452B5F9180AAF2D0052FFFF /* betis.png */,
+				D452B5FA180AAF2D0052FFFF /* lyon.png */,
+				D452B5FB180AAF2D0052FFFF /* vitoria.png */,
+			);
+			path = uefa;
+			sourceTree = "<group>";
+		};
+		D452B63E180ABB3B0052FFFF /* hnl */ = {
+			isa = PBXGroup;
+			children = (
+				D452B63F180ABB3B0052FFFF /* dinamo.png */,
+				D452B640180ABB3B0052FFFF /* hajduk.png */,
+				D452B641180ABB3B0052FFFF /* hrvatski_dragovoljac.png */,
+				D452B642180ABB3B0052FFFF /* istra_1961.png */,
+				D452B643180ABB3B0052FFFF /* lokomotiva.png */,
+				D452B644180ABB3B0052FFFF /* osijek.png */,
+				D452B645180ABB3B0052FFFF /* rijeka.png */,
+				D452B646180ABB3B0052FFFF /* slaven_belupo.png */,
+				D452B647180ABB3B0052FFFF /* split.png */,
+				D452B648180ABB3B0052FFFF /* zadar.png */,
+			);
+			path = hnl;
+			sourceTree = "<group>";
+		};
+		D452B653180AD4860052FFFF /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D452B55E1809BA640052FFFF /* CurrentCalendarCell.xib */,
+				D452B5601809BFCA0052FFFF /* MICurrentCalendarCell.h */,
+				D452B5611809BFCA0052FFFF /* MICurrentCalendarCell.m */,
+				D452B657180AD4DB0052FFFF /* CalendarCell.xib */,
+				D452B654180AD4C20052FFFF /* MICalendarCell.h */,
+				D452B655180AD4C20052FFFF /* MICalendarCell.m */,
+			);
+			name = "Table Cells";
+			sourceTree = "<group>";
+		};
+		D452B65D180AE8630052FFFF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D452B65E180AE8870052FFFF /* MIUnderlayNavigationBar.h */,
+				D452B65F180AE8870052FFFF /* MIUnderlayNavigationBar.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D452B516180961650052FFFF /* HNKRijeka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D452B543180961650052FFFF /* Build configuration list for PBXNativeTarget "HNKRijeka" */;
+			buildPhases = (
+				C38F661917AC46DEBA0C8F1A /* Check Pods Manifest.lock */,
+				D452B513180961650052FFFF /* Sources */,
+				D452B514180961650052FFFF /* Frameworks */,
+				D452B515180961650052FFFF /* Resources */,
+				C0E7F016A3EB43C7B16AB4DE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HNKRijeka;
+			productName = HNKRijeka;
+			productReference = D452B517180961650052FFFF /* HNKRijeka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D452B50F180961650052FFFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MI;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Metaintellect;
+			};
+			buildConfigurationList = D452B512180961650052FFFF /* Build configuration list for PBXProject "HNKRijeka" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				base,
+			);
+			mainGroup = D452B50E180961650052FFFF;
+			productRefGroup = D452B518180961650052FFFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D452B516180961650052FFFF /* HNKRijeka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D452B515180961650052FFFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D452B52D180961650052FFFF /* Images.xcassets in Resources */,
+				D452B5CA1809CE270052FFFF /* krstanovic.png in Resources */,
+				D452B5CB1809CE270052FFFF /* kvrzic.png in Resources */,
+				D452B65B180AE5A90052FFFF /* iTunesArtwork.png in Resources */,
+				D452B5CC1809CE270052FFFF /* leskovic.png in Resources */,
+				D452B5BF1809CE270052FFFF /* alispahic.png in Resources */,
+				D452B5D71809CE270052FFFF /* raspor.png in Resources */,
+				D452B5FE180AAF2D0052FFFF /* vitoria.png in Resources */,
+				D452B5D41809CE270052FFFF /* okechukwu.png in Resources */,
+				D452B651180ABB3B0052FFFF /* split.png in Resources */,
+				D452B5DC1809CE270052FFFF /* zlomislic.png in Resources */,
+				D452B65C180AE5A90052FFFF /* iTunesArtwork@2x.png in Resources */,
+				D452B5FC180AAF2D0052FFFF /* betis.png in Resources */,
+				D452B658180AD4DB0052FFFF /* CalendarCell.xib in Resources */,
+				D452B5C01809CE270052FFFF /* bagadur.png in Resources */,
+				D452B5C91809CE270052FFFF /* kramaric.png in Resources */,
+				D452B64E180ABB3B0052FFFF /* osijek.png in Resources */,
+				D452B5C11809CE270052FFFF /* benko.png in Resources */,
+				D452B5D11809CE270052FFFF /* mitrovic.png in Resources */,
+				D452B5C61809CE270052FFFF /* datkovic.png in Resources */,
+				D452B5CD1809CE270052FFFF /* males.png in Resources */,
+				D452B5C31809CE270052FFFF /* boras.png in Resources */,
+				D452B5D81809CE270052FFFF /* sharbini.png in Resources */,
+				D452B64F180ABB3B0052FFFF /* rijeka.png in Resources */,
+				D452B5D01809CE270052FFFF /* maric.png in Resources */,
+				D452B5D31809CE270052FFFF /* mujanovic.png in Resources */,
+				D452B64D180ABB3B0052FFFF /* lokomotiva.png in Resources */,
+				D452B5D51809CE270052FFFF /* pokrivac.png in Resources */,
+				D452B55F1809BA640052FFFF /* CurrentCalendarCell.xib in Resources */,
+				D452B5FD180AAF2D0052FFFF /* lyon.png in Resources */,
+				D452B5D61809CE270052FFFF /* pusic.png in Resources */,
+				D452B650180ABB3B0052FFFF /* slaven_belupo.png in Resources */,
+				D452B5DA1809CE270052FFFF /* tomecak.png in Resources */,
+				D452B5C21809CE270052FFFF /* bertosa.png in Resources */,
+				D452B64C180ABB3B0052FFFF /* istra_1961.png in Resources */,
+				D452B652180ABB3B0052FFFF /* zadar.png in Resources */,
+				D452B5DB1809CE270052FFFF /* vargic.png in Resources */,
+				D452B5C41809CE270052FFFF /* brezovec.png in Resources */,
+				D452B5BE1809CE270052FFFF /* ajayi.png in Resources */,
+				D452B5D21809CE270052FFFF /* mocinic.png in Resources */,
+				D452B5C71809CE270052FFFF /* jugovic.png in Resources */,
+				D452B5CF1809CE270052FFFF /* marcijus.png in Resources */,
+				D452B5CE1809CE270052FFFF /* mance.png in Resources */,
+				D452B64A180ABB3B0052FFFF /* hajduk.png in Resources */,
+				D452B64B180ABB3B0052FFFF /* hrvatski_dragovoljac.png in Resources */,
+				D452B649180ABB3B0052FFFF /* dinamo.png in Resources */,
+				D452B5C51809CE270052FFFF /* cesarec.png in Resources */,
+				D452B5D91809CE270052FFFF /* skaraboat.png in Resources */,
+				D452B55C18099FDF0052FFFF /* InfoPlist.strings in Resources */,
+				D452B5C81809CE270052FFFF /* knezevic.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0E7F016A3EB43C7B16AB4DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38F661917AC46DEBA0C8F1A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D452B513180961650052FFFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D452B660180AE8870052FFFF /* MIUnderlayNavigationBar.m in Sources */,
+				D452B54E180964820052FFFF /* MINavigationController.m in Sources */,
+				D452B52B180961650052FFFF /* MIAppDelegate.m in Sources */,
+				D452B5621809BFCA0052FFFF /* MICurrentCalendarCell.m in Sources */,
+				D452B656180AD4C20052FFFF /* MICalendarCell.m in Sources */,
+				D452B527180961650052FFFF /* main.m in Sources */,
+				D452B551180964B70052FFFF /* MIMenuViewController.m in Sources */,
+				D452B5DF1809D4760052FFFF /* MICalendarItem.m in Sources */,
+				D452B554180965040052FFFF /* MIHomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D452B55A18099FDF0052FFFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D452B55B18099FDF0052FFFF /* base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D452B541180961650052FFFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D452B542180961650052FFFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D452B544180961650052FFFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D75C36EC3E490CBA7116AC /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HNKRijeka/HNKRijeka-Prefix.pch";
+				INFOPLIST_FILE = "HNKRijeka/HNKRijeka-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D452B545180961650052FFFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D75C36EC3E490CBA7116AC /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HNKRijeka/HNKRijeka-Prefix.pch";
+				INFOPLIST_FILE = "HNKRijeka/HNKRijeka-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D452B512180961650052FFFF /* Build configuration list for PBXProject "HNKRijeka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D452B541180961650052FFFF /* Debug */,
+				D452B542180961650052FFFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D452B543180961650052FFFF /* Build configuration list for PBXNativeTarget "HNKRijeka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D452B544180961650052FFFF /* Debug */,
+				D452B545180961650052FFFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D452B50F180961650052FFFF /* Project object */;
+}
