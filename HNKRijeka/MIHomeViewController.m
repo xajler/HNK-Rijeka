@@ -3,10 +3,12 @@
 #import "MICurrentCalendarCell.h"
 #import "MICalendarItem.h"
 #import "MICalendarCell.h"
+#import "MISqlLiteQuery.h"
 
 @interface MIHomeViewController ()
 
 @property (nonatomic, strong) NSMutableArray *calendarItems;
+@property (nonatomic, strong) MISqlLiteQuery *query;
 
 @end
 
@@ -15,12 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.query = [[MISqlLiteQuery alloc] init];
 	//self.title = @"Home Controller";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu"
                                                                              style:UIBarButtonItemStylePlain
                                                                             target:(MINavigationController *)self.navigationController
                                                                             action:@selector(showMenu)];
-   // [self setCalendarItems];
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
     {
         self.navigationController.navigationBar.translucent = NO;
@@ -35,6 +37,7 @@
     self.tableView.dataSource = self;
     self.tableView.opaque = NO;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.calendarItems = [self.query getCalendarItems];
 }
 
 #pragma mark -
@@ -52,7 +55,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return 2;
+    return [self.calendarItems count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -82,16 +85,11 @@
             }
         }
         
-        MICalendarItem *calendarItem = [[MICalendarItem alloc] init];
-        calendarItem.homeClubName = @"Rijeka";
-        calendarItem.guestClubName = @"Slaven Belupo";
-        calendarItem.homeClubImage = [UIImage imageNamed:@"rijeka.png"];
-        calendarItem.guestClubImage = [UIImage imageNamed:@"slaven_belupo.png"];
-        calendarItem.matchDate = [NSDate date];
-        cell.homeClubLabel.text = [calendarItem homeClubName];
-        cell.guestClubLabel.text = [calendarItem guestClubName];
-        cell.homeClubImageView.image = [calendarItem homeClubImage];
-        cell.guestClubImageView.image = [calendarItem guestClubImage];
+        MICalendarItem *calendarItem = self.calendarItems[indexPath.row];
+        cell.homeClubLabel.text = calendarItem.homeClub.shortName;
+        cell.guestClubLabel.text = calendarItem.guestClub.shortName;
+        cell.homeClubImageView.image = [UIImage imageNamed:calendarItem.homeClub.imageName];
+        cell.guestClubImageView.image = [UIImage imageNamed:calendarItem.guestClub.imageName];
         cell.matchDateTimeLabel.text = [calendarItem getMatchDateAsString];
         return cell;
     }
@@ -115,31 +113,14 @@
             }
         }
         
-        MICalendarItem *calendarItem = [[MICalendarItem alloc] init];
-        calendarItem.homeClubName = @"Lokomotiva";
-        calendarItem.guestClubName = @"Rijeka";
-        calendarItem.homeClubImage = [UIImage imageNamed:@"lokomotiva.png"];
-        calendarItem.guestClubImage = [UIImage imageNamed:@"rijeka.png"];
-        calendarItem.matchDate = [NSDate date];
-        cell.homeClubLabel.text = [calendarItem homeClubName];
-        cell.guestClubLabel.text = [calendarItem guestClubName];
-        cell.homeClubImageView.image = [calendarItem homeClubImage];
-        cell.guestClubImageView.image = [calendarItem guestClubImage];
+        MICalendarItem *calendarItem = self.calendarItems[indexPath.row];
+        cell.homeClubLabel.text = calendarItem.homeClub.shortName;
+        cell.guestClubLabel.text = calendarItem.guestClub.shortName;
+        cell.homeClubImageView.image = [UIImage imageNamed:calendarItem.homeClub.imageName];
+        cell.guestClubImageView.image = [UIImage imageNamed:calendarItem.guestClub.imageName];
         cell.matchDateTimeLabel.text = [calendarItem getMatchDateAsString];
         return cell;
     }
-}
-
--(void)setCalendarItems
-{
-    MICalendarItem *calendarItem = [[MICalendarItem alloc] init];
-    calendarItem.homeClubName = @"HNK Rijeka";
-    calendarItem.guestClubName = @"HNK Hajduk";
-    calendarItem.homeClubImage = [UIImage imageNamed:@"rijeka.png"];
-    calendarItem.guestClubImage = [UIImage imageNamed:@"hajduk.png"];
-    calendarItem.matchDate = [NSDate date];
-    
-    [self.calendarItems addObject:calendarItem];
 }
 
 - (void)dealloc

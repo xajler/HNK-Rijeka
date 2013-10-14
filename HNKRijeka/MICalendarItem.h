@@ -1,16 +1,12 @@
 #import <Foundation/Foundation.h>
+#import "MIClub.h"
 
 @interface MICalendarItem : NSObject
 
-@property (nonatomic, strong) NSString *homeClubName;
-
-@property (nonatomic, strong) NSString *guestClubName;
-
-@property (nonatomic, strong) UIImage *homeClubImage;
-
-@property (nonatomic, strong) UIImage *guestClubImage;
-
-@property (nonatomic, strong) NSDate *matchDate;
+@property (strong, atomic) NSNumber *id;
+@property (strong, atomic) MIClub *homeClub;
+@property (strong, atomic) MIClub *guestClub;
+@property (strong, atomic) NSDate *matchDate;
 
 -(NSString *)getMatchDateAsString;
 

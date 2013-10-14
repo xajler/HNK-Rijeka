@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		73C5F9EB97334428A9A5EDA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED38335898C4E8DB48B1063 /* libPods.a */; };
+		D42C38C9180C1D9A00B751F5 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C38C8180C1D9A00B751F5 /* libsqlite3.0.dylib */; };
+		D42C38CB180C769B00B751F5 /* rijeka.db3 in Resources */ = {isa = PBXBuildFile; fileRef = D42C38CA180C769B00B751F5 /* rijeka.db3 */; };
+		D42C38CE180C777800B751F5 /* MISqlLiteQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C38CD180C777800B751F5 /* MISqlLiteQuery.m */; };
+		D42C38D1180C7B3C00B751F5 /* MIClub.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C38D0180C7B3C00B751F5 /* MIClub.m */; };
+		D42C38D4180C7C5800B751F5 /* MIGameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C38D3180C7C5800B751F5 /* MIGameResult.m */; };
+		D42C38D7180C7F6B00B751F5 /* MICalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C38D6180C7F6B00B751F5 /* MICalendarItem.m */; };
 		D452B51B180961650052FFFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D452B51A180961650052FFFF /* Foundation.framework */; };
 		D452B51D180961650052FFFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D452B51C180961650052FFFF /* CoreGraphics.framework */; };
 		D452B51F180961650052FFFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D452B51E180961650052FFFF /* UIKit.framework */; };
@@ -52,7 +58,6 @@
 		D452B5DA1809CE270052FFFF /* tomecak.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BB1809CE270052FFFF /* tomecak.png */; };
 		D452B5DB1809CE270052FFFF /* vargic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BC1809CE270052FFFF /* vargic.png */; };
 		D452B5DC1809CE270052FFFF /* zlomislic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BD1809CE270052FFFF /* zlomislic.png */; };
-		D452B5DF1809D4760052FFFF /* MICalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B5DE1809D4760052FFFF /* MICalendarItem.m */; };
 		D452B5FC180AAF2D0052FFFF /* betis.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5F9180AAF2D0052FFFF /* betis.png */; };
 		D452B5FD180AAF2D0052FFFF /* lyon.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5FA180AAF2D0052FFFF /* lyon.png */; };
 		D452B5FE180AAF2D0052FFFF /* vitoria.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5FB180AAF2D0052FFFF /* vitoria.png */; };
@@ -70,12 +75,21 @@
 		D452B658180AD4DB0052FFFF /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D452B657180AD4DB0052FFFF /* CalendarCell.xib */; };
 		D452B65B180AE5A90052FFFF /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B659180AE5A90052FFFF /* iTunesArtwork.png */; };
 		D452B65C180AE5A90052FFFF /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B65A180AE5A90052FFFF /* iTunesArtwork@2x.png */; };
-		D452B660180AE8870052FFFF /* MIUnderlayNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D452B65F180AE8870052FFFF /* MIUnderlayNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4ED38335898C4E8DB48B1063 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D75C36EC3E490CBA7116AC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D42C38C8180C1D9A00B751F5 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		D42C38CA180C769B00B751F5 /* rijeka.db3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rijeka.db3; sourceTree = "<group>"; };
+		D42C38CC180C777800B751F5 /* MISqlLiteQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISqlLiteQuery.h; sourceTree = "<group>"; };
+		D42C38CD180C777800B751F5 /* MISqlLiteQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISqlLiteQuery.m; sourceTree = "<group>"; };
+		D42C38CF180C7B3C00B751F5 /* MIClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIClub.h; sourceTree = "<group>"; };
+		D42C38D0180C7B3C00B751F5 /* MIClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIClub.m; sourceTree = "<group>"; };
+		D42C38D2180C7C5800B751F5 /* MIGameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIGameResult.h; sourceTree = "<group>"; };
+		D42C38D3180C7C5800B751F5 /* MIGameResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIGameResult.m; sourceTree = "<group>"; };
+		D42C38D5180C7F6B00B751F5 /* MICalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICalendarItem.h; sourceTree = "<group>"; };
+		D42C38D6180C7F6B00B751F5 /* MICalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICalendarItem.m; sourceTree = "<group>"; };
 		D452B517180961650052FFFF /* HNKRijeka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNKRijeka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D452B51A180961650052FFFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D452B51C180961650052FFFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,8 +143,6 @@
 		D452B5BB1809CE270052FFFF /* tomecak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomecak.png; sourceTree = "<group>"; };
 		D452B5BC1809CE270052FFFF /* vargic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vargic.png; sourceTree = "<group>"; };
 		D452B5BD1809CE270052FFFF /* zlomislic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zlomislic.png; sourceTree = "<group>"; };
-		D452B5DD1809D4760052FFFF /* MICalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICalendarItem.h; sourceTree = "<group>"; };
-		D452B5DE1809D4760052FFFF /* MICalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICalendarItem.m; sourceTree = "<group>"; };
 		D452B5F9180AAF2D0052FFFF /* betis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = betis.png; sourceTree = "<group>"; };
 		D452B5FA180AAF2D0052FFFF /* lyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lyon.png; sourceTree = "<group>"; };
 		D452B5FB180AAF2D0052FFFF /* vitoria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vitoria.png; sourceTree = "<group>"; };
@@ -149,8 +161,6 @@
 		D452B657180AD4DB0052FFFF /* CalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		D452B659180AE5A90052FFFF /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = HNKRijeka/iTunesArtwork.png; sourceTree = "<group>"; };
 		D452B65A180AE5A90052FFFF /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "HNKRijeka/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		D452B65E180AE8870052FFFF /* MIUnderlayNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIUnderlayNavigationBar.h; sourceTree = "<group>"; };
-		D452B65F180AE8870052FFFF /* MIUnderlayNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIUnderlayNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42C38C9180C1D9A00B751F5 /* libsqlite3.0.dylib in Frameworks */,
 				D452B5561809687F0052FFFF /* QuartzCore.framework in Frameworks */,
 				D452B51D180961650052FFFF /* CoreGraphics.framework in Frameworks */,
 				D452B51F180961650052FFFF /* UIKit.framework in Frameworks */,
@@ -192,6 +203,7 @@
 		D452B519180961650052FFFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D42C38C8180C1D9A00B751F5 /* libsqlite3.0.dylib */,
 				D452B5551809687F0052FFFF /* QuartzCore.framework */,
 				D452B51A180961650052FFFF /* Foundation.framework */,
 				D452B51C180961650052FFFF /* CoreGraphics.framework */,
@@ -217,6 +229,7 @@
 		D452B521180961650052FFFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D42C38CA180C769B00B751F5 /* rijeka.db3 */,
 				D452B5631809C6C70052FFFF /* Images */,
 				D452B55A18099FDF0052FFFF /* InfoPlist.strings */,
 				D452B522180961650052FFFF /* HNKRijeka-Info.plist */,
@@ -242,7 +255,7 @@
 		D452B55718096F290052FFFF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D452B65D180AE8630052FFFF /* Utils */,
+				D452B65D180AE8630052FFFF /* Core */,
 				D452B5E01809D4810052FFFF /* Models */,
 				D452B55D1809BA3D0052FFFF /* Views */,
 				D452B54B1809644B0052FFFF /* Controllers */,
@@ -309,8 +322,12 @@
 		D452B5E01809D4810052FFFF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D452B5DD1809D4760052FFFF /* MICalendarItem.h */,
-				D452B5DE1809D4760052FFFF /* MICalendarItem.m */,
+				D42C38D5180C7F6B00B751F5 /* MICalendarItem.h */,
+				D42C38D6180C7F6B00B751F5 /* MICalendarItem.m */,
+				D42C38D2180C7C5800B751F5 /* MIGameResult.h */,
+				D42C38D3180C7C5800B751F5 /* MIGameResult.m */,
+				D42C38CF180C7B3C00B751F5 /* MIClub.h */,
+				D42C38D0180C7B3C00B751F5 /* MIClub.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -355,13 +372,13 @@
 			name = "Table Cells";
 			sourceTree = "<group>";
 		};
-		D452B65D180AE8630052FFFF /* Utils */ = {
+		D452B65D180AE8630052FFFF /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D452B65E180AE8870052FFFF /* MIUnderlayNavigationBar.h */,
-				D452B65F180AE8870052FFFF /* MIUnderlayNavigationBar.m */,
+				D42C38CC180C777800B751F5 /* MISqlLiteQuery.h */,
+				D42C38CD180C777800B751F5 /* MISqlLiteQuery.m */,
 			);
-			name = Utils;
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +452,7 @@
 				D452B658180AD4DB0052FFFF /* CalendarCell.xib in Resources */,
 				D452B5C01809CE270052FFFF /* bagadur.png in Resources */,
 				D452B5C91809CE270052FFFF /* kramaric.png in Resources */,
+				D42C38CB180C769B00B751F5 /* rijeka.db3 in Resources */,
 				D452B64E180ABB3B0052FFFF /* osijek.png in Resources */,
 				D452B5C11809CE270052FFFF /* benko.png in Resources */,
 				D452B5D11809CE270052FFFF /* mitrovic.png in Resources */,
@@ -512,14 +530,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D452B660180AE8870052FFFF /* MIUnderlayNavigationBar.m in Sources */,
 				D452B54E180964820052FFFF /* MINavigationController.m in Sources */,
 				D452B52B180961650052FFFF /* MIAppDelegate.m in Sources */,
 				D452B5621809BFCA0052FFFF /* MICurrentCalendarCell.m in Sources */,
 				D452B656180AD4C20052FFFF /* MICalendarCell.m in Sources */,
+				D42C38CE180C777800B751F5 /* MISqlLiteQuery.m in Sources */,
 				D452B527180961650052FFFF /* main.m in Sources */,
+				D42C38D7180C7F6B00B751F5 /* MICalendarItem.m in Sources */,
+				D42C38D4180C7C5800B751F5 /* MIGameResult.m in Sources */,
 				D452B551180964B70052FFFF /* MIMenuViewController.m in Sources */,
-				D452B5DF1809D4760052FFFF /* MICalendarItem.m in Sources */,
+				D42C38D1180C7B3C00B751F5 /* MIClub.m in Sources */,
 				D452B554180965040052FFFF /* MIHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

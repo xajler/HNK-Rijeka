@@ -2,15 +2,14 @@
 
 @implementation MICalendarItem
 
-@synthesize homeClubName, guestClubName, homeClubImage, guestClubImage, matchDate;
-
+@synthesize id, homeClub, guestClub, matchDate;
 
 -(NSString *)getMatchDateAsString
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"EEE, dd MMMM yyyy 'u' HH:mm"];
+    [dateFormatter setDateFormat:@"EEE, dd MMMM yyyy HH:mm"];
     
-    NSString *result = [dateFormatter stringFromDate:self.matchDate];
+    NSString *result = [dateFormatter stringFromDate:(NSDate *) matchDate];    
     return result;
 }
 

@@ -2,7 +2,6 @@
 #import "MINavigationController.h"
 #import "MIHomeViewController.h"
 #import "MIMenuViewController.h"
-#import "MIUnderlayNavigationBar.h"
 
 @implementation MIAppDelegate
 
@@ -10,10 +9,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     MINavigationController *navigationController = [[MINavigationController alloc] initWithRootViewController:[[MIHomeViewController alloc] init]];
-    //MINavigationController *navigationController = [[MINavigationController alloc] initWithNavigationBarClass:[MIUnderlayNavigationBar class] toolbarClass:nil];
     MIMenuViewController *menuController = [[MIMenuViewController alloc] initWithStyle:UITableViewStylePlain];
     
-    REFrostedViewController *frostedViewController = [[REFrostedViewController alloc] initWithContentViewController:navigationController menuViewController:menuController];
+    REFrostedViewController *frostedViewController = [[REFrostedViewController alloc] initWithContentViewController:navigationController
+                                                                                                 menuViewController:menuController];
     frostedViewController.direction = REFrostedViewControllerDirectionLeft;
     frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
     self.window.rootViewController = frostedViewController;
