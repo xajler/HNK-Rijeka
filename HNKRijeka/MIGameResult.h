@@ -12,4 +12,5 @@
 @property (strong, atomic) NSNumber *guestGoals;
 @property (strong, atomic) NSNumber *number;
 
+-(NSString *)getDateAsString;
 @end

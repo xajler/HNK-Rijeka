@@ -14,8 +14,13 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
+}
 
-    // Configure the view for the selected state
+-(void)unhideScoreLabels
+{
+    [self.homeGoalsLabel setHidden:NO];
+    [self.guestGoalsLabel setHidden:NO];
+    [self.scoreSeparatorLabel setHidden:NO];
 }
 
 @end

@@ -1,5 +1,6 @@
 #import "MIMenuViewController.h"
 #import "MIHomeViewController.h"
+#import "MICurrentResultsViewController.h"
 
 @interface MIMenuViewController ()
 
@@ -22,25 +23,9 @@
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 100.0f)];
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 80, 80)];
         imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-        imageView.image = [UIImage imageNamed:@"hnk-rijeka-avatar.png"];
-//        imageView.layer.masksToBounds = YES;
-//        imageView.layer.cornerRadius = 50.0;
-//        imageView.layer.borderColor = [UIColor whiteColor].CGColor;
-//        imageView.layer.borderWidth = 3.0f;
-//        imageView.layer.rasterizationScale = [UIScreen mainScreen].scale;
-//        imageView.layer.shouldRasterize = YES;
+        imageView.image = [UIImage imageNamed:@"hnk-rijeka-logo.png"];
         imageView.clipsToBounds = YES;
-        
-//        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 0, 24)];
-//        label.text = @"Roman Efimov";
-//        label.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
-//        label.backgroundColor = [UIColor clearColor];
-//        label.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
-//        [label sizeToFit];
-//        label.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-        
         [view addSubview:imageView];
-      //  [view addSubview:label];
         view;
     });
 }
@@ -53,21 +38,6 @@
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
-}
-
-- (UIView *)createViewForTableViewSectionWithLabel:(UITableView *)tableView withLabel:(NSString *)label
-{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 34)];
-    view.backgroundColor = [UIColor colorWithRed:0.056 green:0.664 blue:0.944 alpha:1.000];//[UIColor colorWithRed:0.212 green:0.392 blue:0.545 alpha:1.000];
-    
-    UILabel *sectionLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 8, 0, 0)];
-    sectionLabel.text = label;
-    sectionLabel.font = [UIFont systemFontOfSize:15];
-    sectionLabel.textColor = [UIColor whiteColor];
-    sectionLabel.backgroundColor = [UIColor clearColor];
-    [sectionLabel sizeToFit];
-    [view addSubview:sectionLabel];
-    return view;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)sectionIndex
@@ -113,10 +83,10 @@
         MIHomeViewController *homeViewController = [[MIHomeViewController alloc] init];
         navigationController.viewControllers = @[homeViewController];
     }
-    else
+    else if (indexPath.section == 1 && indexPath.row == 0)
     {
-//        DEMOSecondViewController *secondViewController = [[DEMOSecondViewController alloc] init];
-//        navigationController.viewControllers = @[secondViewController];
+        MICurrentResultsViewController *currentResultsViewController = [[MICurrentResultsViewController alloc] init];
+        navigationController.viewControllers = @[currentResultsViewController];
     }
     
     [self.frostedViewController hideMenuViewController];
@@ -137,7 +107,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    if (sectionIndex == 0 || sectionIndex == 1 || sectionIndex == 2)
+    if (sectionIndex == 0)
+    {
+        return 1;
+    }
+    else if (sectionIndex == 1 || sectionIndex == 2)
     {
         return 2;
     }
@@ -161,8 +135,7 @@
     
     if (indexPath.section == 0)
     {
-        NSArray *titles = @[NSLocalizedString(@"Početna", nil),
-                            NSLocalizedString(@"Arhiva", nil)];
+        NSArray *titles = @[NSLocalizedString(@"Početna", nil)];
         cell.textLabel.text = titles[indexPath.row];
     }
     else if (indexPath.section == 1)
@@ -186,6 +159,21 @@
     }
     
     return cell;
+}
+
+- (UIView *)createViewForTableViewSectionWithLabel:(UITableView *)tableView withLabel:(NSString *)label
+{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 34)];
+    view.backgroundColor = [UIColor colorWithRed:0.056 green:0.664 blue:0.944 alpha:1.000];//[UIColor colorWithRed:0.212 green:0.392 blue:0.545 alpha:1.000];
+    
+    UILabel *sectionLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 8, 0, 0)];
+    sectionLabel.text = label;
+    sectionLabel.font = [UIFont systemFontOfSize:15];
+    sectionLabel.textColor = [UIColor whiteColor];
+    sectionLabel.backgroundColor = [UIColor clearColor];
+    [sectionLabel sizeToFit];
+    [view addSubview:sectionLabel];
+    return view;
 }
 
 - (void)dealloc

@@ -10,7 +10,6 @@
 FMDatabase *db;
 NSMutableArray *clubs;
 NSString *path;
-NSString *currentSeason = @"2013/14";
 
 -(id)init
 {
@@ -60,13 +59,11 @@ NSString *currentSeason = @"2013/14";
     [db open];
     
     NSMutableArray *result = [[NSMutableArray alloc] init];
-    NSString *query = @"SELECT id, season, date, home_clubid, guest_clubid, home_goals, guest_goals, number FROM results WHERE season = ? ORDER BY date";
+    NSString *query = @"";
     FMResultSet *resultSet;
     
-    if (!season) { season = currentSeason; }
-    
     NSLog(@"%@", query);
-    resultSet = [db executeQueryWithFormat:query, season];
+    resultSet = [db executeQuery:@"SELECT id, season, date, home_clubid, guest_clubid, home_goals, guest_goals, number FROM results WHERE season = ? ORDER BY date", season];
     
     while ([resultSet next])
     {

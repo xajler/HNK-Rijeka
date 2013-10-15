@@ -17,4 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreSeparatorLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *guestGoalsLabel;
+
+-(void)unhideScoreLabels;
 @end
