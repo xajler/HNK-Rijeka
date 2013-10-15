@@ -23,13 +23,20 @@
     {
         [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.056 green:0.664 blue:0.944 alpha:1.000]];
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor]];
     }
     else
     {
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+        self.window.backgroundColor = [UIColor colorWithRed:0.056 green:0.664 blue:0.944 alpha:1.000];
     }
     
     
+//    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+//    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor];
+//    self.navigationController.navigationBar.translucent = NO;
     
     return YES;
 }

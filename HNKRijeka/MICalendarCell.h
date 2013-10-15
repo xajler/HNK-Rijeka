@@ -12,4 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *guestClubImageView;
 
+@property (weak, nonatomic) IBOutlet UILabel *homeGoalsLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *scoreSeparatorLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *guestGoalsLabel;
 @end

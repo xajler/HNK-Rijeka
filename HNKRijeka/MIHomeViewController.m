@@ -18,8 +18,9 @@
 {
     [super viewDidLoad];
     self.query = [[MISqlLiteQuery alloc] init];
-	//self.title = @"Home Controller";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu"
+	self.title = @"HNK Rijeka";
+    //self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rijeka-logo.png"]];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-button.png"]
                                                                              style:UIBarButtonItemStylePlain
                                                                             target:(MINavigationController *)self.navigationController
                                                                             action:@selector(showMenu)];
