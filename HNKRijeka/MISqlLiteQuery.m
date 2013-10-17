@@ -5,6 +5,8 @@
 #import "MIGameResult.h"
 #import "MICalendarItem.h"
 
+NSString *const MICurrentSeason = @"2013/14";
+
 @implementation MISqlLiteQuery
 
 FMDatabase *db;
@@ -37,7 +39,7 @@ NSString *path;
     {
         MIClub *club = [[MIClub alloc] init];
         
-        club.id = [NSNumber numberWithInt:[resultSet intForColumn:@"id"]];
+        club.id = @([resultSet intForColumn:@"id"]);
         club.name = [resultSet stringForColumn:@"name"];
         club.shortName = [resultSet stringForColumn:@"short_name"];
         club.imageName = [resultSet stringForColumn:@"image_name"];
@@ -68,14 +70,14 @@ NSString *path;
     while ([resultSet next])
     {
         MIGameResult *gameResult = [[MIGameResult alloc] init];
-        gameResult.id = [NSNumber numberWithInt:[resultSet intForColumn:@"id"]];
+        gameResult.id = @([resultSet intForColumn:@"id"]);
         gameResult.season = [self getSeasonBySeason:[resultSet stringForColumn:@"season"]];
         gameResult.date = [resultSet dateForColumn:@"date"];
-        gameResult.homeClub = [self getClubById:[NSNumber numberWithInt:[resultSet intForColumn:@"home_clubid"]]];
-        gameResult.guestClub = [self getClubById:[NSNumber numberWithInt:[resultSet intForColumn:@"guest_clubid"]]];
-        gameResult.homeGoals = [NSNumber numberWithInt:[resultSet intForColumn:@"home_goals"]];
-        gameResult.guestGoals = [NSNumber numberWithInt:[resultSet intForColumn:@"guest_goals"]];
-        gameResult.number = [NSNumber numberWithInt:[resultSet intForColumn:@"number"]];
+        gameResult.homeClub = [self getClubById:@([resultSet intForColumn:@"home_clubid"])];
+        gameResult.guestClub = [self getClubById:@([resultSet intForColumn:@"guest_clubid"])];
+        gameResult.homeGoals = @([resultSet intForColumn:@"home_goals"]);
+        gameResult.guestGoals = @([resultSet intForColumn:@"guest_goals"]);
+        gameResult.number = @([resultSet intForColumn:@"number"]);
         
         [result addObject:gameResult];
     }
@@ -127,9 +129,9 @@ NSString *path;
     while ([resultSet next])
     {
         MICalendarItem *calendarItem = [[MICalendarItem alloc] init];
-        calendarItem.id = [NSNumber numberWithInt:[resultSet intForColumn:@"id"]];
-        calendarItem.homeClub = [self getClubById:[NSNumber numberWithInt:[resultSet intForColumn:@"home_clubid"]]];
-        calendarItem.guestClub = [self getClubById:[NSNumber numberWithInt:[resultSet intForColumn:@"guest_clubid"]]];
+        calendarItem.id = @([resultSet intForColumn:@"id"]);
+        calendarItem.homeClub = [self getClubById:@([resultSet intForColumn:@"home_clubid"])];
+        calendarItem.guestClub = [self getClubById:@([resultSet intForColumn:@"guest_clubid"])];
         calendarItem.matchDate = [resultSet dateForColumn:@"match_date"];
         
         [result addObject:calendarItem];

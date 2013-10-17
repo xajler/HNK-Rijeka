@@ -13,8 +13,6 @@
 
 @implementation MICurrentResultsViewController
 
-NSString *currentSeason = @"2013/14";
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,7 +37,7 @@ NSString *currentSeason = @"2013/14";
     self.tableView.dataSource = self;
     self.tableView.opaque = NO;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    self.gameResults = [self.query getGameResultsFor:currentSeason];
+    self.gameResults = [self.query getGameResultsFor:MICurrentSeason];
 }
 
 #pragma mark -
@@ -47,7 +45,7 @@ NSString *currentSeason = @"2013/14";
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)sectionIndex
 {
-    return [self createViewForTableViewSectionWithLabel:tableView withLabel:currentSeason];
+    return [self createViewForTableViewSectionWithLabel:tableView withLabel:MICurrentSeason];
 }
 
 #pragma mark -

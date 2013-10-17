@@ -4,6 +4,8 @@
 
 @interface MISqlLiteQuery : NSObject
 
+extern NSString *const MICurrentSeason;
+
 -(NSMutableArray *)getClubs;
 
 -(NSMutableArray *)getSeasons;
