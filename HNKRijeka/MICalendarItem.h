@@ -3,10 +3,10 @@
 
 @interface MICalendarItem : NSObject
 
-@property (strong, atomic) NSNumber *id;
-@property (strong, atomic) MIClub *homeClub;
-@property (strong, atomic) MIClub *guestClub;
-@property (strong, atomic) NSDate *matchDate;
+@property (strong, nonatomic) NSNumber *id;
+@property (strong, nonatomic) MIClub *homeClub;
+@property (strong, nonatomic) MIClub *guestClub;
+@property (strong, nonatomic) NSDate *matchDate;
 
 -(NSString *)getMatchDateAsString;
 

@@ -4,19 +4,15 @@
 #import "MICalendarCell.h"
 #import "MISqlLiteQuery.h"
 
-@interface MICurrentResultsViewController ()
-
-@property (nonatomic, strong) NSMutableArray *gameResults;
-@property (nonatomic, strong) MISqlLiteQuery *query;
-
-@end
-
 @implementation MICurrentResultsViewController
+
+NSMutableArray *_gameResults;
+MISqlLiteQuery *_query;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.query = [[MISqlLiteQuery alloc] init];
+    _query = [[MISqlLiteQuery alloc] init];
 	self.title = NSLocalizedString(@"Rezultati", nil);
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-button.png"]
@@ -37,7 +33,7 @@
     self.tableView.dataSource = self;
     self.tableView.opaque = NO;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    self.gameResults = [self.query getGameResultsFor:MICurrentSeason];
+    _gameResults = [_query getGameResultsFor:MICurrentSeason];
 }
 
 #pragma mark -
@@ -53,7 +49,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return [self.gameResults count];
+    return [_gameResults count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -83,7 +79,7 @@
     
     [cell unhideScoreLabels];
     
-    MIGameResult *gameResult = self.gameResults[indexPath.row];
+    MIGameResult *gameResult = _gameResults[indexPath.row];
     cell.homeClubLabel.text = gameResult.homeClub.shortName;
     cell.guestClubLabel.text = gameResult.guestClub.shortName;
     cell.homeClubImageView.image = [UIImage imageNamed:gameResult.homeClub.imageName];

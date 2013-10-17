@@ -2,10 +2,6 @@
 #import "MIHomeViewController.h"
 #import "MICurrentResultsViewController.h"
 
-@interface MIMenuViewController ()
-
-@end
-
 @implementation MIMenuViewController
 
 - (void)viewDidLoad

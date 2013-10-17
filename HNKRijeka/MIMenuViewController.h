@@ -3,6 +3,6 @@
 
 @interface MIMenuViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, readwrite, nonatomic) UINavigationController *navigationController;
+@property (weak, nonatomic) UINavigationController *navigationController;
 
 @end

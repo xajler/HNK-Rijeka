@@ -5,19 +5,15 @@
 #import "MICalendarCell.h"
 #import "MISqlLiteQuery.h"
 
-@interface MIHomeViewController ()
-
-@property (nonatomic, strong) NSMutableArray *calendarItems;
-@property (nonatomic, strong) MISqlLiteQuery *query;
-
-@end
-
 @implementation MIHomeViewController
+
+NSMutableArray *_calendarItems;
+MISqlLiteQuery *_query;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.query = [[MISqlLiteQuery alloc] init];
+    _query = [[MISqlLiteQuery alloc] init];
 	self.title = @"HNK Rijeka";
     //self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rijeka-logo.png"]];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-button.png"]
@@ -38,7 +34,7 @@
     self.tableView.dataSource = self;
     self.tableView.opaque = NO;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    self.calendarItems = [self.query getCalendarItems];
+    _calendarItems = [_query getCalendarItems];
 }
 
 #pragma mark -
@@ -56,7 +52,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return [self.calendarItems count];
+    return [_calendarItems count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -86,7 +82,7 @@
             }
         }
         
-        MICalendarItem *calendarItem = self.calendarItems[indexPath.row];
+        MICalendarItem *calendarItem = _calendarItems[indexPath.row];
         cell.homeClubLabel.text = calendarItem.homeClub.shortName;
         cell.guestClubLabel.text = calendarItem.guestClub.shortName;
         cell.homeClubImageView.image = [UIImage imageNamed:calendarItem.homeClub.imageName];
@@ -114,7 +110,7 @@
             }
         }
         
-        MICalendarItem *calendarItem = self.calendarItems[indexPath.row];
+        MICalendarItem *calendarItem = _calendarItems[indexPath.row];
         cell.homeClubLabel.text = calendarItem.homeClub.shortName;
         cell.guestClubLabel.text = calendarItem.guestClub.shortName;
         cell.homeClubImageView.image = [UIImage imageNamed:calendarItem.homeClub.imageName];

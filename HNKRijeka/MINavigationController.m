@@ -2,10 +2,6 @@
 #import "MIMenuViewController.h"
 #import "UIViewController+REFrostedViewController.h"
 
-@interface MINavigationController ()
-
-@end
-
 @implementation MINavigationController
 
 - (void)viewDidLoad
