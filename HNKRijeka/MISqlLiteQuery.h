@@ -14,4 +14,8 @@ extern NSString *const MICurrentSeason;
 
 -(NSMutableArray *)getCalendarItems;
 
+-(NSMutableArray *)getLeagueTableItemsForSeason:(NSString *)season;
+
+-(NSMutableArray *)getPlayersForSeason:(NSString *)season andPositon:(NSString *)positon;
+
 @end

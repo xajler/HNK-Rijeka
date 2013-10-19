@@ -4,6 +4,8 @@
 #import "MIClub.h"
 #import "MIGameResult.h"
 #import "MICalendarItem.h"
+#import "MILeagueTableItem.h"
+#import "MIPlayer.h"
 
 NSString *const MICurrentSeason = @"2013/14";
 
@@ -135,6 +137,76 @@ NSString *path;
         calendarItem.matchDate = [resultSet dateForColumn:@"match_date"];
         
         [result addObject:calendarItem];
+    }
+    
+    [db close];
+    
+    return result;
+}
+
+-(NSMutableArray *)getLeagueTableItemsForSeason:(NSString *)season
+{
+    clubs = [self getClubs];
+    
+    [db open];
+    
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+    
+    FMResultSet *resultSet = [db executeQuery:@"SELECT id, position, wins, draws, loses, goal_for, "
+                              "goal_against, points, clubid, season "
+                              "FROM league_tables "
+                              "WHERE season = ? "
+                              "ORDER BY position", season];
+    
+    while ([resultSet next])
+    {
+        MILeagueTableItem *leagueTable = [[MILeagueTableItem alloc] init];
+        leagueTable.id = @([resultSet intForColumn:@"id"]);
+        leagueTable.position = @([resultSet intForColumn:@"position"]);
+        leagueTable.wins = @([resultSet intForColumn:@"wins"]);
+        leagueTable.draws = @([resultSet intForColumn:@"draws"]);
+        leagueTable.loses = @([resultSet intForColumn:@"loses"]);
+        leagueTable.goalFor = @([resultSet intForColumn:@"goal_for"]);
+        leagueTable.goalAgainst = @([resultSet intForColumn:@"goal_against"]);
+        leagueTable.points = @([resultSet intForColumn:@"points"]);
+        leagueTable.club = [self getClubById:@([resultSet intForColumn:@"clubid"])];
+        leagueTable.season = [self getSeasonBySeason:season];
+        
+        [result addObject:leagueTable];
+    }
+        
+    [db close];
+    
+    return result;
+}
+
+-(NSMutableArray *)getPlayersForSeason:(NSString *)season andPositon:(NSString *)positon
+{
+    [db open];
+    
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+    FMResultSet *resultSet = [db executeQuery:@"SELECT id, birth_date, height, weight, position, uniform_number, image_name, "
+                              "about, contract_until_date, season, first_name, last_name "
+                              "FROM players "
+                              "WHERE season = ? AND position = ?", season, positon];
+    
+    while ([resultSet next])
+    {
+        MIPlayer *player = [[MIPlayer alloc] init];
+        player.id = @([resultSet intForColumn:@"id"]);
+        player.birthDate = [resultSet dateForColumn:@"birth_date"];
+        player.height = @([resultSet intForColumn:@"height"]);
+        player.weight = @([resultSet intForColumn:@"weight"]);
+        player.position = [resultSet stringForColumn:@"position"];
+        player.uniformNumber = @([resultSet intForColumn:@"uniform_number"]);
+        player.about = [resultSet stringForColumn:@"about"];
+        player.contractUntilDate = [resultSet dateForColumn:@"contract_until_date"];
+        player.season = [self getSeasonBySeason:season];
+        player.firstName = [resultSet stringForColumn:@"first_name"];
+        player.lastName = [resultSet stringForColumn:@"last_name"];
+        player.imageName = [resultSet stringForColumn:@"image_name"];
+        
+        [result addObject:player];
     }
     
     [db close];

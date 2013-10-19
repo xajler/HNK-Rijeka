@@ -44,7 +44,7 @@
 		D452B5CC1809CE270052FFFF /* leskovic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5AD1809CE270052FFFF /* leskovic.png */; };
 		D452B5CD1809CE270052FFFF /* males.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5AE1809CE270052FFFF /* males.png */; };
 		D452B5CE1809CE270052FFFF /* mance.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5AF1809CE270052FFFF /* mance.png */; };
-		D452B5CF1809CE270052FFFF /* marcijus.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B01809CE270052FFFF /* marcijus.png */; };
+		D452B5CF1809CE270052FFFF /* marcius.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B01809CE270052FFFF /* marcius.png */; };
 		D452B5D01809CE270052FFFF /* maric.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B11809CE270052FFFF /* maric.png */; };
 		D452B5D11809CE270052FFFF /* mitrovic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B21809CE270052FFFF /* mitrovic.png */; };
 		D452B5D21809CE270052FFFF /* mocinic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B31809CE270052FFFF /* mocinic.png */; };
@@ -54,7 +54,7 @@
 		D452B5D61809CE270052FFFF /* pusic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B71809CE270052FFFF /* pusic.png */; };
 		D452B5D71809CE270052FFFF /* raspor.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B81809CE270052FFFF /* raspor.png */; };
 		D452B5D81809CE270052FFFF /* sharbini.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5B91809CE270052FFFF /* sharbini.png */; };
-		D452B5D91809CE270052FFFF /* skaraboat.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BA1809CE270052FFFF /* skaraboat.png */; };
+		D452B5D91809CE270052FFFF /* skarabot.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BA1809CE270052FFFF /* skarabot.png */; };
 		D452B5DA1809CE270052FFFF /* tomecak.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BB1809CE270052FFFF /* tomecak.png */; };
 		D452B5DB1809CE270052FFFF /* vargic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BC1809CE270052FFFF /* vargic.png */; };
 		D452B5DC1809CE270052FFFF /* zlomislic.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B5BD1809CE270052FFFF /* zlomislic.png */; };
@@ -75,6 +75,16 @@
 		D452B658180AD4DB0052FFFF /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D452B657180AD4DB0052FFFF /* CalendarCell.xib */; };
 		D452B65B180AE5A90052FFFF /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B659180AE5A90052FFFF /* iTunesArtwork.png */; };
 		D452B65C180AE5A90052FFFF /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D452B65A180AE5A90052FFFF /* iTunesArtwork@2x.png */; };
+		D4ECDDA91812793D0062D3A5 /* LeagueTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4ECDDA81812793D0062D3A5 /* LeagueTableCell.xib */; };
+		D4ECDDAC18127BD60062D3A5 /* MILeagueTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ECDDAB18127BD60062D3A5 /* MILeagueTableCell.m */; };
+		D4ECDDAF18127DCD0062D3A5 /* MILeagueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ECDDAE18127DCD0062D3A5 /* MILeagueTableViewController.m */; };
+		D4ECDDB2181282480062D3A5 /* MILeagueTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ECDDB1181282480062D3A5 /* MILeagueTableItem.m */; };
+		D4ECDDB518128AA50062D3A5 /* MIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ECDDB418128AA50062D3A5 /* MIPlayer.m */; };
+		D4ECDDB918128FD50062D3A5 /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4ECDDB818128FD50062D3A5 /* PlayerCell.xib */; };
+		D4ECDDBC181290AC0062D3A5 /* MIPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ECDDBB181290AC0062D3A5 /* MIPlayerCell.m */; };
+		D4ECDDBF181291620062D3A5 /* MIPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ECDDBE181291620062D3A5 /* MIPlayerViewController.m */; };
+		D4ECDDC118129F610062D3A5 /* PlayerDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4ECDDC018129F610062D3A5 /* PlayerDetailView.xib */; };
+		D4ECDDC71812AD7F0062D3A5 /* MIPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ECDDC61812AD7F0062D3A5 /* MIPlayerDetailViewController.m */; };
 		D4FAA01F180CC4330001BB95 /* MICurrentResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FAA01E180CC4330001BB95 /* MICurrentResultsViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -130,7 +140,7 @@
 		D452B5AD1809CE270052FFFF /* leskovic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leskovic.png; sourceTree = "<group>"; };
 		D452B5AE1809CE270052FFFF /* males.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = males.png; sourceTree = "<group>"; };
 		D452B5AF1809CE270052FFFF /* mance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mance.png; sourceTree = "<group>"; };
-		D452B5B01809CE270052FFFF /* marcijus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marcijus.png; sourceTree = "<group>"; };
+		D452B5B01809CE270052FFFF /* marcius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marcius.png; sourceTree = "<group>"; };
 		D452B5B11809CE270052FFFF /* maric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maric.png; sourceTree = "<group>"; };
 		D452B5B21809CE270052FFFF /* mitrovic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mitrovic.png; sourceTree = "<group>"; };
 		D452B5B31809CE270052FFFF /* mocinic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mocinic.png; sourceTree = "<group>"; };
@@ -140,7 +150,7 @@
 		D452B5B71809CE270052FFFF /* pusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pusic.png; sourceTree = "<group>"; };
 		D452B5B81809CE270052FFFF /* raspor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raspor.png; sourceTree = "<group>"; };
 		D452B5B91809CE270052FFFF /* sharbini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharbini.png; sourceTree = "<group>"; };
-		D452B5BA1809CE270052FFFF /* skaraboat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skaraboat.png; sourceTree = "<group>"; };
+		D452B5BA1809CE270052FFFF /* skarabot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skarabot.png; sourceTree = "<group>"; };
 		D452B5BB1809CE270052FFFF /* tomecak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomecak.png; sourceTree = "<group>"; };
 		D452B5BC1809CE270052FFFF /* vargic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vargic.png; sourceTree = "<group>"; };
 		D452B5BD1809CE270052FFFF /* zlomislic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zlomislic.png; sourceTree = "<group>"; };
@@ -162,6 +172,23 @@
 		D452B657180AD4DB0052FFFF /* CalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		D452B659180AE5A90052FFFF /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = HNKRijeka/iTunesArtwork.png; sourceTree = "<group>"; };
 		D452B65A180AE5A90052FFFF /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "HNKRijeka/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		D4ECDDA81812793D0062D3A5 /* LeagueTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeagueTableCell.xib; sourceTree = "<group>"; };
+		D4ECDDAA18127BD60062D3A5 /* MILeagueTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MILeagueTableCell.h; sourceTree = "<group>"; };
+		D4ECDDAB18127BD60062D3A5 /* MILeagueTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MILeagueTableCell.m; sourceTree = "<group>"; };
+		D4ECDDAD18127DCD0062D3A5 /* MILeagueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MILeagueTableViewController.h; sourceTree = "<group>"; };
+		D4ECDDAE18127DCD0062D3A5 /* MILeagueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MILeagueTableViewController.m; sourceTree = "<group>"; };
+		D4ECDDB0181282480062D3A5 /* MILeagueTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MILeagueTableItem.h; sourceTree = "<group>"; };
+		D4ECDDB1181282480062D3A5 /* MILeagueTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MILeagueTableItem.m; sourceTree = "<group>"; };
+		D4ECDDB318128AA50062D3A5 /* MIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIPlayer.h; sourceTree = "<group>"; };
+		D4ECDDB418128AA50062D3A5 /* MIPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIPlayer.m; sourceTree = "<group>"; };
+		D4ECDDB818128FD50062D3A5 /* PlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
+		D4ECDDBA181290AC0062D3A5 /* MIPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIPlayerCell.h; sourceTree = "<group>"; };
+		D4ECDDBB181290AC0062D3A5 /* MIPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIPlayerCell.m; sourceTree = "<group>"; };
+		D4ECDDBD181291620062D3A5 /* MIPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIPlayerViewController.h; sourceTree = "<group>"; };
+		D4ECDDBE181291620062D3A5 /* MIPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIPlayerViewController.m; sourceTree = "<group>"; };
+		D4ECDDC018129F610062D3A5 /* PlayerDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerDetailView.xib; sourceTree = "<group>"; };
+		D4ECDDC51812AD7F0062D3A5 /* MIPlayerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIPlayerDetailViewController.h; sourceTree = "<group>"; };
+		D4ECDDC61812AD7F0062D3A5 /* MIPlayerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIPlayerDetailViewController.m; sourceTree = "<group>"; };
 		D4FAA01D180CC4330001BB95 /* MICurrentResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICurrentResultsViewController.h; sourceTree = "<group>"; };
 		D4FAA01E180CC4330001BB95 /* MICurrentResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICurrentResultsViewController.m; sourceTree = "<group>"; };
 		D4FAA020180CD15B0001BB95 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -254,6 +281,12 @@
 				D452B553180965040052FFFF /* MIHomeViewController.m */,
 				D4FAA01D180CC4330001BB95 /* MICurrentResultsViewController.h */,
 				D4FAA01E180CC4330001BB95 /* MICurrentResultsViewController.m */,
+				D4ECDDAD18127DCD0062D3A5 /* MILeagueTableViewController.h */,
+				D4ECDDAE18127DCD0062D3A5 /* MILeagueTableViewController.m */,
+				D4ECDDBD181291620062D3A5 /* MIPlayerViewController.h */,
+				D4ECDDBE181291620062D3A5 /* MIPlayerViewController.m */,
+				D4ECDDC51812AD7F0062D3A5 /* MIPlayerDetailViewController.h */,
+				D4ECDDC61812AD7F0062D3A5 /* MIPlayerDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -273,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				D452B653180AD4860052FFFF /* Table Cells */,
+				D4ECDDC018129F610062D3A5 /* PlayerDetailView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -307,7 +341,7 @@
 				D452B5AD1809CE270052FFFF /* leskovic.png */,
 				D452B5AE1809CE270052FFFF /* males.png */,
 				D452B5AF1809CE270052FFFF /* mance.png */,
-				D452B5B01809CE270052FFFF /* marcijus.png */,
+				D452B5B01809CE270052FFFF /* marcius.png */,
 				D452B5B11809CE270052FFFF /* maric.png */,
 				D452B5B21809CE270052FFFF /* mitrovic.png */,
 				D452B5B31809CE270052FFFF /* mocinic.png */,
@@ -317,7 +351,7 @@
 				D452B5B71809CE270052FFFF /* pusic.png */,
 				D452B5B81809CE270052FFFF /* raspor.png */,
 				D452B5B91809CE270052FFFF /* sharbini.png */,
-				D452B5BA1809CE270052FFFF /* skaraboat.png */,
+				D452B5BA1809CE270052FFFF /* skarabot.png */,
 				D452B5BB1809CE270052FFFF /* tomecak.png */,
 				D452B5BC1809CE270052FFFF /* vargic.png */,
 				D452B5BD1809CE270052FFFF /* zlomislic.png */,
@@ -334,6 +368,10 @@
 				D42C38D3180C7C5800B751F5 /* MIGameResult.m */,
 				D42C38CF180C7B3C00B751F5 /* MIClub.h */,
 				D42C38D0180C7B3C00B751F5 /* MIClub.m */,
+				D4ECDDB0181282480062D3A5 /* MILeagueTableItem.h */,
+				D4ECDDB1181282480062D3A5 /* MILeagueTableItem.m */,
+				D4ECDDB318128AA50062D3A5 /* MIPlayer.h */,
+				D4ECDDB418128AA50062D3A5 /* MIPlayer.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -374,6 +412,12 @@
 				D452B657180AD4DB0052FFFF /* CalendarCell.xib */,
 				D452B654180AD4C20052FFFF /* MICalendarCell.h */,
 				D452B655180AD4C20052FFFF /* MICalendarCell.m */,
+				D4ECDDA81812793D0062D3A5 /* LeagueTableCell.xib */,
+				D4ECDDAA18127BD60062D3A5 /* MILeagueTableCell.h */,
+				D4ECDDAB18127BD60062D3A5 /* MILeagueTableCell.m */,
+				D4ECDDB818128FD50062D3A5 /* PlayerCell.xib */,
+				D4ECDDBA181290AC0062D3A5 /* MIPlayerCell.h */,
+				D4ECDDBB181290AC0062D3A5 /* MIPlayerCell.m */,
 			);
 			name = "Table Cells";
 			sourceTree = "<group>";
@@ -448,11 +492,13 @@
 				D452B5CB1809CE270052FFFF /* kvrzic.png in Resources */,
 				D452B65B180AE5A90052FFFF /* iTunesArtwork.png in Resources */,
 				D452B5CC1809CE270052FFFF /* leskovic.png in Resources */,
+				D4ECDDB918128FD50062D3A5 /* PlayerCell.xib in Resources */,
 				D452B5BF1809CE270052FFFF /* alispahic.png in Resources */,
 				D452B5D71809CE270052FFFF /* raspor.png in Resources */,
 				D452B5FE180AAF2D0052FFFF /* vitoria.png in Resources */,
 				D452B5D41809CE270052FFFF /* okechukwu.png in Resources */,
 				D452B651180ABB3B0052FFFF /* split.png in Resources */,
+				D4ECDDC118129F610062D3A5 /* PlayerDetailView.xib in Resources */,
 				D452B5DC1809CE270052FFFF /* zlomislic.png in Resources */,
 				D452B65C180AE5A90052FFFF /* iTunesArtwork@2x.png in Resources */,
 				D452B5FC180AAF2D0052FFFF /* betis.png in Resources */,
@@ -485,13 +531,14 @@
 				D452B5BE1809CE270052FFFF /* ajayi.png in Resources */,
 				D452B5D21809CE270052FFFF /* mocinic.png in Resources */,
 				D452B5C71809CE270052FFFF /* jugovic.png in Resources */,
-				D452B5CF1809CE270052FFFF /* marcijus.png in Resources */,
+				D452B5CF1809CE270052FFFF /* marcius.png in Resources */,
+				D4ECDDA91812793D0062D3A5 /* LeagueTableCell.xib in Resources */,
 				D452B5CE1809CE270052FFFF /* mance.png in Resources */,
 				D452B64A180ABB3B0052FFFF /* hajduk.png in Resources */,
 				D452B64B180ABB3B0052FFFF /* hrvatski_dragovoljac.png in Resources */,
 				D452B649180ABB3B0052FFFF /* dinamo.png in Resources */,
 				D452B5C51809CE270052FFFF /* cesarec.png in Resources */,
-				D452B5D91809CE270052FFFF /* skaraboat.png in Resources */,
+				D452B5D91809CE270052FFFF /* skarabot.png in Resources */,
 				D452B55C18099FDF0052FFFF /* InfoPlist.strings in Resources */,
 				D452B5C81809CE270052FFFF /* knezevic.png in Resources */,
 			);
@@ -538,17 +585,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				D452B54E180964820052FFFF /* MINavigationController.m in Sources */,
+				D4ECDDC71812AD7F0062D3A5 /* MIPlayerDetailViewController.m in Sources */,
+				D4ECDDAC18127BD60062D3A5 /* MILeagueTableCell.m in Sources */,
 				D452B52B180961650052FFFF /* MIAppDelegate.m in Sources */,
 				D452B5621809BFCA0052FFFF /* MICurrentCalendarCell.m in Sources */,
 				D452B656180AD4C20052FFFF /* MICalendarCell.m in Sources */,
 				D42C38CE180C777800B751F5 /* MISqlLiteQuery.m in Sources */,
 				D452B527180961650052FFFF /* main.m in Sources */,
 				D42C38D7180C7F6B00B751F5 /* MICalendarItem.m in Sources */,
+				D4ECDDB518128AA50062D3A5 /* MIPlayer.m in Sources */,
 				D42C38D4180C7C5800B751F5 /* MIGameResult.m in Sources */,
+				D4ECDDBC181290AC0062D3A5 /* MIPlayerCell.m in Sources */,
+				D4ECDDB2181282480062D3A5 /* MILeagueTableItem.m in Sources */,
 				D452B551180964B70052FFFF /* MIMenuViewController.m in Sources */,
 				D42C38D1180C7B3C00B751F5 /* MIClub.m in Sources */,
 				D4FAA01F180CC4330001BB95 /* MICurrentResultsViewController.m in Sources */,
+				D4ECDDAF18127DCD0062D3A5 /* MILeagueTableViewController.m in Sources */,
 				D452B554180965040052FFFF /* MIHomeViewController.m in Sources */,
+				D4ECDDBF181291620062D3A5 /* MIPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

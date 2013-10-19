@@ -21,7 +21,7 @@
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
     {
-        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.056 green:0.664 blue:0.944 alpha:1.000]];
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.000 green:0.698 blue:0.933 alpha:1.000]];
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
         [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
         [[UINavigationBar appearance] setTitleTextAttributes:@{UITextAttributeTextColor: [UIColor whiteColor]}];

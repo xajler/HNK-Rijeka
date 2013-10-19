@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>55590DC1-AA4F-4066-87CC-3F711827BD86</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HNKRijeka</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EDA47724-6FEE-4022-B9AF-8C8ABC1E5CF7</key>
+		<string>ssh://github.com/xajler/test.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HNKRijeka.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EDA47724-6FEE-4022-B9AF-8C8ABC1E5CF7</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/xajler/test.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EDA47724-6FEE-4022-B9AF-8C8ABC1E5CF7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EDA47724-6FEE-4022-B9AF-8C8ABC1E5CF7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HNKRijeka</string>
+		</dict>
+	</array>
+</dict>
+</plist>

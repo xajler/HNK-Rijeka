@@ -1,6 +1,8 @@
 #import "MIMenuViewController.h"
 #import "MIHomeViewController.h"
 #import "MICurrentResultsViewController.h"
+#import "MILeagueTableViewController.h"
+#import "MIPlayerViewController.h"
 
 @implementation MIMenuViewController
 
@@ -83,6 +85,16 @@
     {
         MICurrentResultsViewController *currentResultsViewController = [[MICurrentResultsViewController alloc] init];
         navigationController.viewControllers = @[currentResultsViewController];
+    }
+    else if (indexPath.section == 1 && indexPath.row == 1)
+    {
+        MILeagueTableViewController *leagueTableViewController = [[MILeagueTableViewController alloc] init];
+        navigationController.viewControllers = @[leagueTableViewController];
+    }
+    else if (indexPath.section == 2 && indexPath.row ==0)
+    {
+        MIPlayerViewController *playersViewController = [[MIPlayerViewController alloc] init];
+        navigationController.viewControllers =@[playersViewController];
     }
     
     [self.frostedViewController hideMenuViewController];
